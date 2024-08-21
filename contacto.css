@@ -1,0 +1,134 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('https://st4.depositphotos.com/1008011/25427/i/450/depositphotos_254276410-stock-photo-gili-trawangan-bali-indonesia-travel.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 70px;
+  }
+  
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .menu {
+    list-style:none;
+    display: flex;
+    color:crimson;
+  }
+  
+  .menu li {
+    margin: 0 110px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-right: 40px;
+    padding-right: 0%;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    display:inline-block ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .menu a{
+    color:white;
+    text-decoration: none;
+  }
+  
+  main {
+    margin-top: 60px; /* Ajusta el margen superior para que el contenido no quede oculto debajo del header */
+  }
+  
+  .contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .info-item {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+  
+  .info-item h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .map {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  

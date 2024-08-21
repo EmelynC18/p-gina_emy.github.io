@@ -1,0 +1,152 @@
+@import url(https://www.guatemala.com/guias/aventura/lugares-que-tienes-que-visitar-si-vas-a-huehuetenango-guatemala/);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  background: #212026;
+  color: aliceblue;
+}
+
+header {
+  position:relative;
+  background-color:rgb(27, 27, 27);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+
+}
+
+header img {
+  width: 100px; /* Ajustar tamaño según diseño */
+
+}
+
+.menu {
+  list-style:none;
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.menu li {
+  margin: 0 20px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding-right:0%;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  display:inline-block ;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+
+.container{
+  position: absolute; /*relative*/
+  top: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 1400px;
+  height: 600px;
+  background: #212026;
+  transition: 0.45s;
+}
+
+.container .box{
+  position: relative;
+  background: var(--img);
+  background-position: center;
+  background-size: cover;
+  transition: 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(0) brightness(1);
+}
+
+.container:hover  .box{
+  filter: grayscale(1);
+}
+
+.container  .box:hover{
+  filter: grayscale(0) brightness(1.25);
+}
+
+.container:has(.one:hover){
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.container:has(.two:hover){
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.container:has(.three:hover){
+  grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.container:has(.four:hover){
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+.container:has(.five:hover){
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.container:has(.six:hover){
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+.container  .box::before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#212026, transparent, transparent,transparent, transparent, #212026);
+}
+
+.container  .box:nth-child(even){
+  transform: translateY(30px);
+}
+
+.container  .box:nth-child(odd){
+  transform: translateY(-30px);
+}
+.container  .box::after{
+  content: attr(data-text);
+  position: absolute;
+  bottom: -100px;
+  background: white;
+  color: #212026;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5px 10px;
+  white-space: nowrap;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  opacity: 0;
+  transition-delay: 0s;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, #0003);
+}
+
+.container .box:hover::after{
+  opacity: 1;
+  bottom: -60px;
+  transition-delay: 0.25s;
+}

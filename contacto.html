@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Turismo</title>
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="icon" href="imagenes/Logo_Naturaleza_Hojas_Ilustrado_Verde_20240731_134418_0000-removebg-preview.png">
+  <!-- Agregar el enlace a la API de Google Maps si es necesario -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="naturalez.html">NATURALEZA</a></li>
+        <li><a href="cultural.html">CULTURAL</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section class="contact">
+      <h1>Contacto</h1>
+      
+      <div class="contact-info">
+        <div class="info-item">
+          <h2>Información de Contacto</h2>
+          <p><strong>Dirección:</strong>Huehuetenango, Guatemala</p>
+          <p><strong>Teléfono:</strong> +502 3021-9208</p>
+          <p><strong>Email:</strong> contacto@turismo.com</p>
+        </div>
+
+        <div class="info-item">
+          <h2>Formulario de Contacto</h2>
+          <form action="mailto:contacto@turismo.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.771138945281!2d-99.17925788511582!3d19.42702290509811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a0b8bce78d53%3A0x9f1e07d9db6e1b1a!2sAv.%20de%20la%20Independencia%20123%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX%2C%20M%C3%A9xico!5e0!3m2!1ses!2sus!4v1652767517474!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Turismo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
